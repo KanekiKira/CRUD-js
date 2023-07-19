@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <!-- Bootstrap Style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Custom CSS Styles -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+      <div class="container">
+        <h2 class="mt-5 mb-5">CRUD Appplication Wiht Local Storage</h2>
+        <div class="mb-5">
+            <div class="row">
+                <div class="form-group col-md-6 mb-3">
+                    <label for="name">Name</label>
+                    <input 
+                     type="text"
+                     name="name" 
+                     class="form-control" 
+                     id="name" 
+                     placeholder="Enter Name"/>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="surnmae">Surname</label>
+                    <input 
+                     type="tel"
+                     name="surname" 
+                     class="form-control" 
+                     id="surname" 
+                     placeholder="Enter Surname"/>
+                     
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="phone">Phone</label>
+                    <input 
+                     type="text"
+                     name="phone" 
+                     class="form-control" 
+                     id="phone" 
+                     placeholder="Enter Phone"/>
+                     <small>Format: +996 707 - 123 - 456</small>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="image">Contact Image</label>
+                    <input 
+                     type="url"
+                     name="image" 
+                     class="form-control" 
+                     id="image-url" 
+                     placeholder="Input URL Of Image"/>
+                </div>
+                <div class="call-lg-12 mt-5">
+                    <button class="btn btn-success" id="Submit" onclick="addData()">
+                        Add Data</button>
+                    <button class="btn btn-primary" id="Update" onclick="updateData()">
+                        Update</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <table class="table table-bordered" id="crudTable">
+                        <thead>
+                            <th>
+                                Name
+                            </th>
+                            <th>Surname
+
+                            </th>
+                            <th>
+                                Phone Number
+                            </th>
+                            <img src="" alt="">
+                            <th>
+                                Actions
+                            </th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
